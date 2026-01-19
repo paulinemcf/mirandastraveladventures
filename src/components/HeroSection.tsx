@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
-import { Sparkles, Star } from "lucide-react";
+import { Sparkles, Star, Globe, BookOpen } from "lucide-react";
 import { Button } from "./ui/button";
-import heroImage from "@/assets/hero-adventure.jpg";
+import mirandaCharacter from "@/assets/miranda-character.png";
 
 const HeroSection = () => {
   return (
@@ -9,15 +9,9 @@ const HeroSection = () => {
       id="home"
       className="relative min-h-screen flex items-center justify-center overflow-hidden pt-20"
     >
-      {/* Background Image with Overlay */}
-      <div className="absolute inset-0">
-        <img
-          src={heroImage}
-          alt="Miranda's Travel Adventures"
-          className="w-full h-full object-cover"
-        />
-        <div className="absolute inset-0 bg-gradient-to-b from-background/40 via-background/20 to-background" />
-      </div>
+      {/* Background with gradient */}
+      <div className="absolute inset-0 bg-gradient-to-br from-ocean/20 via-primary/10 to-accent/20" />
+      <div className="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-background" />
 
       {/* Floating decorative elements */}
       <motion.div
@@ -36,73 +30,96 @@ const HeroSection = () => {
       </motion.div>
 
       {/* Content */}
-      <div className="relative z-10 container mx-auto px-4 text-center">
-        <motion.div
-          initial={{ opacity: 0, y: 30 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8, delay: 0.2 }}
-          className="max-w-4xl mx-auto"
-        >
+      <div className="relative z-10 container mx-auto px-4">
+        <div className="grid lg:grid-cols-2 gap-12 items-center">
+          {/* Text Content */}
           <motion.div
-            initial={{ scale: 0.8, opacity: 0 }}
-            animate={{ scale: 1, opacity: 1 }}
-            transition={{ duration: 0.6 }}
-            className="inline-block mb-6"
+            initial={{ opacity: 0, y: 30 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8, delay: 0.2 }}
+            className="text-center lg:text-left"
           >
-            <span className="bg-accent/90 text-accent-foreground px-4 py-2 rounded-full font-display font-semibold text-sm md:text-base">
-              ✨ A Children's Book Series by Janeth Bell
-            </span>
+            <motion.div
+              initial={{ scale: 0.8, opacity: 0 }}
+              animate={{ scale: 1, opacity: 1 }}
+              transition={{ duration: 0.6 }}
+              className="inline-block mb-6"
+            >
+              <span className="bg-accent/90 text-accent-foreground px-4 py-2 rounded-full font-display font-semibold text-sm md:text-base">
+                ✨ A Children's Book Series by Janeth Bell
+              </span>
+            </motion.div>
+
+            <h1 className="font-display text-4xl md:text-5xl lg:text-6xl font-bold text-foreground mb-6 leading-tight">
+              Join Miranda on{" "}
+              <span className="text-gradient-sunset">Magical Adventures</span>{" "}
+              Through Latin America!
+            </h1>
+
+            <p className="font-body text-lg md:text-xl text-muted-foreground mb-8 max-w-xl mx-auto lg:mx-0 leading-relaxed">
+              Travel through dreams to Spanish-speaking countries, solve mysteries, 
+              make new friends, and learn about diverse cultures in this engaging series 
+              for curious young readers.
+            </p>
+
+            <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start items-center">
+              <Button variant="hero" size="xl" asChild>
+                <a
+                  href="https://www.amazon.com/s?k=Miranda%27s+Travel+Adventures+Janeth+Bell"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <Sparkles className="w-5 h-5" />
+                  Get the Books on Amazon
+                </a>
+              </Button>
+              <Button variant="outline" size="lg" asChild>
+                <a href="#books">Explore the Series</a>
+              </Button>
+            </div>
+
+            {/* Trust badges */}
+            <motion.div
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              transition={{ delay: 1, duration: 0.8 }}
+              className="mt-10 flex flex-wrap justify-center lg:justify-start gap-4 text-muted-foreground text-sm"
+            >
+              <div className="flex items-center gap-2 bg-card/80 px-3 py-2 rounded-full border border-border">
+                <BookOpen className="w-4 h-4 text-primary" />
+                <span>Interactive Activities</span>
+              </div>
+              <div className="flex items-center gap-2 bg-card/80 px-3 py-2 rounded-full border border-border">
+                <Globe className="w-4 h-4 text-primary" />
+                <span>Cultural Learning</span>
+              </div>
+              <div className="flex items-center gap-2 bg-card/80 px-3 py-2 rounded-full border border-border">
+                <Star className="w-4 h-4 text-accent fill-accent" />
+                <span>Ages 8-12</span>
+              </div>
+            </motion.div>
           </motion.div>
 
-          <h1 className="font-display text-4xl md:text-6xl lg:text-7xl font-bold text-foreground mb-6 leading-tight">
-            Join Miranda on{" "}
-            <span className="text-gradient-sunset">Magical Adventures</span>{" "}
-            Through Latin America!
-          </h1>
-
-          <p className="font-body text-lg md:text-xl text-foreground/80 mb-8 max-w-2xl mx-auto leading-relaxed">
-            Explore mysteries, discover family secrets, surf ocean waves, dance salsa, 
-            and journey through volcanoes in this exciting series celebrating 
-            the vibrant diversity of Latin American life.
-          </p>
-
-          <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-            <Button variant="hero" size="xl" asChild>
-              <a
-                href="https://www.amazon.com/s?k=Miranda%27s+Travel+Adventures+Janeth+Bell"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <Sparkles className="w-5 h-5" />
-                Get the Books on Amazon
-              </a>
-            </Button>
-            <Button variant="outline" size="lg" asChild>
-              <a href="#books">Explore the Series</a>
-            </Button>
-          </div>
-
-          {/* Trust badges */}
+          {/* Miranda Character */}
           <motion.div
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            transition={{ delay: 1, duration: 0.8 }}
-            className="mt-12 flex flex-wrap justify-center gap-6 text-muted-foreground text-sm"
+            initial={{ opacity: 0, scale: 0.9 }}
+            animate={{ opacity: 1, scale: 1 }}
+            transition={{ duration: 0.8, delay: 0.4 }}
+            className="relative"
           >
-            <div className="flex items-center gap-2">
-              <Star className="w-4 h-4 text-accent fill-accent" />
-              <span>Fun Activities in Every Book</span>
+            <div className="relative z-10">
+              <img
+                src={mirandaCharacter}
+                alt="Miranda - the adventurous main character"
+                className="w-full max-w-md mx-auto drop-shadow-2xl"
+              />
             </div>
-            <div className="flex items-center gap-2">
-              <Star className="w-4 h-4 text-accent fill-accent" />
-              <span>Perfect for Ages 8-12</span>
-            </div>
-            <div className="flex items-center gap-2">
-              <Star className="w-4 h-4 text-accent fill-accent" />
-              <span>Celebrate Diversity</span>
-            </div>
+            {/* Decorative elements */}
+            <div className="absolute -top-8 -right-8 w-40 h-40 bg-accent/30 rounded-full blur-3xl" />
+            <div className="absolute -bottom-8 -left-8 w-48 h-48 bg-primary/20 rounded-full blur-3xl" />
+            <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-64 h-64 bg-ocean/20 rounded-full blur-3xl" />
           </motion.div>
-        </motion.div>
+        </div>
       </div>
 
       {/* Bottom wave decoration */}
