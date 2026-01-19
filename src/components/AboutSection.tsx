@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
-import { Heart, MapPin, Pen, Sparkles } from "lucide-react";
-import authorImage from "@/assets/author-portrait.jpg";
+import { Heart, MapPin, BookOpen, Sparkles } from "lucide-react";
+import authorImage from "@/assets/author-janeth.jpg";
 
 const AboutSection = () => {
   return (
@@ -18,7 +18,7 @@ const AboutSection = () => {
             <div className="relative z-10">
               <img
                 src={authorImage}
-                alt="Janeth Bell - Author"
+                alt="Janeth Bell - Author of Miranda's Travel Adventures"
                 className="w-full max-w-md mx-auto rounded-2xl shadow-2xl"
               />
             </div>
@@ -34,8 +34,8 @@ const AboutSection = () => {
               className="absolute -right-4 top-1/4 bg-card shadow-xl rounded-xl p-4 border border-border"
             >
               <div className="flex items-center gap-2">
-                <Pen className="w-5 h-5 text-primary" />
-                <span className="font-display font-semibold text-foreground">Preteen Author</span>
+                <BookOpen className="w-5 h-5 text-primary" />
+                <span className="font-display font-semibold text-foreground">Children's Author</span>
               </div>
             </motion.div>
           </motion.div>
@@ -52,32 +52,49 @@ const AboutSection = () => {
             </span>
             
             <h2 className="font-display text-3xl md:text-5xl font-bold text-foreground mb-6">
-              Hello! I'm{" "}
+              Hi! I'm{" "}
               <span className="text-gradient-sunset">Janeth Bell</span>
             </h2>
             
-            <p className="font-body text-lg text-muted-foreground mb-6 leading-relaxed">
-              Welcome to my world of adventure! I'm passionate about sharing the 
-              vibrant culture, mysteries, and beauty of Latin America with young readers 
-              around the world.
+            <p className="font-body text-lg text-muted-foreground mb-4 leading-relaxed">
+              I love writing stories for kids who are curious about the world 🌍.
             </p>
             
-            <p className="font-body text-lg text-muted-foreground mb-8 leading-relaxed">
-              Through Miranda's adventures, I invite children to explore life in the tropics, 
-              discover the magic of volcanoes, learn about diverse cultures, and find the 
-              heroes within themselves. Every book includes fun activities to extend the 
-              learning and adventure!
+            <p className="font-body text-muted-foreground mb-4 leading-relaxed">
+              I grew up on the beautiful island of Jamaica, and from a young age I learned how important 
+              kindness and caring for others are. When I was a kid, I spent time helping at a children's 
+              hospital where my mom worked, and those experiences stayed with me.
+            </p>
+            
+            <p className="font-body text-muted-foreground mb-4 leading-relaxed">
+              I took my first big trip when I was eleven years old, traveling to places like England, France, 
+              and Spain. It wasn't always easy — I had to figure out new languages, new foods, and how to make 
+              new friends — but I learned that laughter, courage, and curiosity can help anywhere you go.
+            </p>
+            
+            <p className="font-body text-muted-foreground mb-4 leading-relaxed">
+              Later, I lived in Mexico and became a teacher in New York City, helping students from many 
+              different countries learn English and Spanish. That's when I knew I wanted to write stories 
+              that help kids learn about other cultures in a fun and exciting way.
+            </p>
+            
+            <p className="font-body text-lg text-muted-foreground mb-6 leading-relaxed font-medium">
+              My hope is that these stories inspire you to be brave, kind, and excited to learn about the world.
+            </p>
+            
+            <p className="font-display text-xl text-primary font-semibold">
+              Happy reading — and happy travels! ✨
             </p>
 
             {/* Features */}
-            <div className="grid sm:grid-cols-2 gap-4">
+            <div className="grid sm:grid-cols-2 gap-4 mt-8">
               <div className="flex items-start gap-3 p-4 bg-muted rounded-xl">
                 <div className="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center flex-shrink-0">
                   <MapPin className="w-5 h-5 text-primary" />
                 </div>
                 <div>
-                  <h4 className="font-display font-semibold text-foreground">Latin American Roots</h4>
-                  <p className="text-sm text-muted-foreground">Authentic stories from lived experiences</p>
+                  <h4 className="font-display font-semibold text-foreground">Jamaican Roots</h4>
+                  <p className="text-sm text-muted-foreground">World traveler since age 11</p>
                 </div>
               </div>
               
@@ -86,8 +103,8 @@ const AboutSection = () => {
                   <Heart className="w-5 h-5 text-accent-foreground" />
                 </div>
                 <div>
-                  <h4 className="font-display font-semibold text-foreground">Celebrating Diversity</h4>
-                  <p className="text-sm text-muted-foreground">Stories that embrace cultural richness</p>
+                  <h4 className="font-display font-semibold text-foreground">Former Teacher</h4>
+                  <p className="text-sm text-muted-foreground">NYC educator, English & Spanish</p>
                 </div>
               </div>
               
@@ -96,18 +113,18 @@ const AboutSection = () => {
                   <Sparkles className="w-5 h-5 text-secondary-foreground" />
                 </div>
                 <div>
-                  <h4 className="font-display font-semibold text-foreground">Fun Activities</h4>
-                  <p className="text-sm text-muted-foreground">Interactive learning in every book</p>
+                  <h4 className="font-display font-semibold text-foreground">Cultural Explorer</h4>
+                  <p className="text-sm text-muted-foreground">Lived in Mexico & beyond</p>
                 </div>
               </div>
               
               <div className="flex items-start gap-3 p-4 bg-muted rounded-xl">
                 <div className="w-10 h-10 rounded-full bg-volcano/10 flex items-center justify-center flex-shrink-0">
-                  <Pen className="w-5 h-5 text-volcano" />
+                  <BookOpen className="w-5 h-5 text-volcano" />
                 </div>
                 <div>
-                  <h4 className="font-display font-semibold text-foreground">Young Readers</h4>
-                  <p className="text-sm text-muted-foreground">Perfect for ages 8-12</p>
+                  <h4 className="font-display font-semibold text-foreground">Passionate Writer</h4>
+                  <p className="text-sm text-muted-foreground">Making learning fun for kids</p>
                 </div>
               </div>
             </div>
