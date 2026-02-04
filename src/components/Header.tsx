@@ -1,7 +1,9 @@
 import { motion } from "framer-motion";
-import { BookOpen, Menu, X } from "lucide-react";
+import { Menu, X } from "lucide-react";
 import { useState } from "react";
 import { Button } from "./ui/button";
+import logoFull from "@/assets/logo-full.png";
+import logoMta from "@/assets/logo-mta.png";
 
 const Header = () => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -23,13 +25,19 @@ const Header = () => {
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between h-16 md:h-20">
           {/* Logo */}
-          <a href="#home" className="flex items-center gap-2 group">
-            <div className="w-10 h-10 rounded-full bg-gradient-sunset flex items-center justify-center group-hover:scale-110 transition-transform">
-              <BookOpen className="w-5 h-5 text-primary-foreground" />
-            </div>
-            <span className="font-display font-bold text-lg md:text-xl text-foreground">
-              Miranda's Travel Adventures
-            </span>
+          <a href="#home" className="flex items-center group">
+            {/* Mobile: MTA icon logo */}
+            <img 
+              src={logoMta} 
+              alt="MTA Logo" 
+              className="h-12 md:hidden group-hover:scale-105 transition-transform"
+            />
+            {/* Desktop: Full logo */}
+            <img 
+              src={logoFull} 
+              alt="Miranda's Travel Adventures" 
+              className="h-14 hidden md:block group-hover:scale-105 transition-transform"
+            />
           </a>
 
           {/* Desktop Navigation */}

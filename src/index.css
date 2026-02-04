@@ -10,52 +10,53 @@
 
 @layer base {
   :root {
-    /* Warm cream background with rich adventure colors */
-    --background: 45 50% 97%;
-    --foreground: 25 30% 15%;
+    /* Clean white background with brand colors from logo */
+    --background: 45 30% 98%;
+    --foreground: 20 25% 15%;
 
-    --card: 45 40% 99%;
-    --card-foreground: 25 30% 15%;
+    --card: 0 0% 100%;
+    --card-foreground: 20 25% 15%;
 
-    --popover: 45 40% 99%;
-    --popover-foreground: 25 30% 15%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 20 25% 15%;
 
-    /* Vibrant coral/orange - adventure energy */
-    --primary: 15 85% 55%;
+    /* Brand coral/terracotta red from logo text */
+    --primary: 12 75% 48%;
     --primary-foreground: 0 0% 100%;
 
-    /* Tropical teal */
-    --secondary: 175 60% 40%;
+    /* Sky blue from globe/MTA logo */
+    --secondary: 198 85% 55%;
     --secondary-foreground: 0 0% 100%;
 
-    /* Warm sand tones */
-    --muted: 40 30% 92%;
-    --muted-foreground: 25 20% 45%;
+    /* Warm sand/cream tones */
+    --muted: 42 35% 93%;
+    --muted-foreground: 25 20% 40%;
 
-    /* Golden sunshine accent */
-    --accent: 45 95% 55%;
-    --accent-foreground: 25 30% 15%;
+    /* Warm orange accent from M letter */
+    --accent: 28 95% 55%;
+    --accent-foreground: 0 0% 100%;
 
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 0 0% 100%;
 
-    --border: 35 25% 88%;
-    --input: 35 25% 88%;
-    --ring: 15 85% 55%;
+    --border: 38 30% 88%;
+    --input: 38 30% 88%;
+    --ring: 12 75% 48%;
 
     --radius: 1rem;
 
-    /* Custom adventure colors */
-    --volcano: 15 75% 45%;
-    --ocean: 195 80% 45%;
-    --jungle: 145 55% 38%;
-    --sunset: 25 90% 60%;
-    --sand: 40 45% 85%;
+    /* Custom brand colors from logo */
+    --volcano: 12 75% 48%;
+    --ocean: 198 85% 55%;
+    --jungle: 85 55% 45%;
+    --sunset: 28 95% 55%;
+    --sand: 42 50% 88%;
+    --sneaker-red: 0 75% 50%;
     
-    /* Gradients */
-    --gradient-sunset: linear-gradient(135deg, hsl(15 85% 55%) 0%, hsl(45 95% 55%) 100%);
-    --gradient-ocean: linear-gradient(135deg, hsl(175 60% 40%) 0%, hsl(195 80% 45%) 100%);
-    --gradient-adventure: linear-gradient(180deg, hsl(45 50% 97%) 0%, hsl(40 45% 92%) 100%);
+    /* Gradients matching logo colors */
+    --gradient-sunset: linear-gradient(135deg, hsl(12 75% 48%) 0%, hsl(28 95% 55%) 100%);
+    --gradient-ocean: linear-gradient(135deg, hsl(198 85% 55%) 0%, hsl(198 70% 65%) 100%);
+    --gradient-adventure: linear-gradient(180deg, hsl(45 30% 98%) 0%, hsl(42 35% 94%) 100%);
 
     --sidebar-background: 45 40% 96%;
     --sidebar-foreground: 25 30% 15%;
