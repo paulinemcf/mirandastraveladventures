@@ -42,7 +42,7 @@ const ContactSection = () => {
             </motion.a>
 
             <motion.a
-              href="#"
+              href="mailto:contact@mirandastraveladventures.com?subject=School Visit or Event Inquiry"
               whileHover={{ scale: 1.02 }}
               whileTap={{ scale: 0.98 }}
               className="bg-card p-6 rounded-2xl shadow-lg border border-border hover:shadow-xl transition-all group"
@@ -50,18 +50,22 @@ const ContactSection = () => {
               <div className="w-14 h-14 rounded-full bg-gradient-ocean flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform">
                 <MessageCircle className="w-6 h-6 text-secondary-foreground" />
               </div>
-              <h3 className="font-display font-bold text-foreground mb-2">Book a Visit</h3>
-              <p className="text-muted-foreground text-sm">School visits and reading events</p>
+              <h3 className="font-display font-bold text-foreground mb-2">Book an Event</h3>
+              <p className="text-muted-foreground text-sm">School visits, book fairs & readings</p>
             </motion.a>
           </div>
 
           {/* Newsletter Signup */}
           <div className="bg-card p-8 rounded-2xl shadow-xl border border-border">
             <h3 className="font-display text-xl font-bold text-foreground mb-2">
-              Stay Updated on New Adventures!
+              🌎 Be the First to Explore New Countries!
             </h3>
-            <p className="text-muted-foreground mb-6">
-              Be the first to know about new books, activities, and exclusive content.
+            <p className="text-muted-foreground mb-2">
+              Miranda's adventures are expanding! With <strong>5 books planned</strong> and more on the way, 
+              sign up to get notified when new destinations are released.
+            </p>
+            <p className="text-sm text-muted-foreground mb-6">
+              Coming soon: Guatemala, Argentina, and more Latin American adventures!
             </p>
             
             <form className="flex flex-col sm:flex-row gap-3 max-w-md mx-auto">
@@ -72,7 +76,7 @@ const ContactSection = () => {
               />
               <Button variant="default" size="lg" type="submit">
                 <Send className="w-4 h-4" />
-                Subscribe
+                Notify Me
               </Button>
             </form>
           </div>

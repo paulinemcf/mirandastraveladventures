@@ -87,9 +87,9 @@ const BooksSection = () => {
                   <BookOpen className="w-4 h-4 text-primary" />
                   <span className="text-sm font-medium">Interactive Activities</span>
                 </div>
-                <div className="flex items-center gap-2 bg-muted px-4 py-2 rounded-full">
+              <div className="flex items-center gap-2 bg-muted px-4 py-2 rounded-full">
                   <Users className="w-4 h-4 text-primary" />
-                  <span className="text-sm font-medium">Ages 8-12</span>
+                  <span className="text-sm font-medium">Ages 8-12 (Boys & Girls)</span>
                 </div>
               </div>
             </div>
