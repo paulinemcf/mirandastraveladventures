@@ -6,19 +6,43 @@ import mirandaCharacter from "@/assets/miranda-character.png";
 const books = [
   {
     id: 1,
-    title: "Miranda's Travel Adventures: Mexico",
+    title: "The Quinceañera Party Mystery in Colombia",
     description:
-      "Miranda travels to Mexico, where she explores vibrant markets, learns about traditions like Day of the Dead, and meets local children who introduce her to the country's rich history and daily life.",
-    amazonUrl: "https://a.co/d/8F5MnwE",
-    features: ["Spanish Vocabulary", "Mexican Culture", "Mystery Adventure"],
+      "Miranda is happy to experience life in Colombia. However, just when she is having the most fun with her friends, something goes wrong! She becomes a suspect in a jewelry theft at a 15th birthday party (quinceañera)! How can she save herself when she hardly speaks Spanish?",
+    amazonUrl: "https://a.co/d/0eYzc88k",
+    features: ["Colombia", "Mystery", "Quinceañera Culture"],
   },
   {
     id: 2,
-    title: "Miranda's Travel Adventures: Peru",
+    title: "Panic in Ecuador!",
     description:
-      "In this adventure, Miranda explores the wonders of Peru, including the Andes Mountains and Machu Picchu. She solves mysteries while learning about Incan history and making new friends.",
-    amazonUrl: "https://a.co/d/4kCaxCz",
-    features: ["Incan Civilization", "Geography", "Problem Solving"],
+      "Miranda travels to Ecuador where students are doing class presentations about their country's history and culture. All eyes are on her to talk about Ecuador. How can she? She hardly speaks Spanish, and she knows nothing about Ecuador! Can she escape this one?",
+    amazonUrl: "https://a.co/d/02qzq0wu",
+    features: ["Ecuador", "School Adventure", "History & Culture"],
+  },
+  {
+    id: 3,
+    title: "Salsa in Puerto Rico!",
+    description:
+      "Miranda is on the island of Puerto Rico. In the midst of her fun, she is attacked by a bully! Miranda tries to defend herself, but she hardly speaks Spanish, and she knows no one there who can help her!",
+    amazonUrl: "https://a.co/d/0aAh2bE0",
+    features: ["Puerto Rico", "Standing Up to Bullies", "Salsa Dancing"],
+  },
+  {
+    id: 4,
+    title: "Secrets in Mexico",
+    description:
+      "Miranda finds herself making friends in Mexico. She is happy to learn about their history and traditions, including the Day of the Dead celebrations, but she also learns a big secret that creates a mystery. Does she add to the confusion?",
+    amazonUrl: "https://a.co/d/0bAXmpbp",
+    features: ["Mexico", "Day of the Dead", "Mystery Adventure"],
+  },
+  {
+    id: 5,
+    title: "Drama in the Dominican Republic!",
+    description:
+      "Miranda enjoys being in the Dominican Republic and making new friends. There she learns about the beauty of the island as well as the damaging effects of hurricanes and climate change. Could she survive a disaster with her limited Spanish?",
+    amazonUrl: "https://a.co/d/07Z4MaWJ",
+    features: ["Dominican Republic", "Climate Awareness", "Survival"],
   },
 ];
 
@@ -41,9 +65,10 @@ const BooksSection = () => {
             Miranda's Travel Adventures
           </h2>
           <p className="font-body text-lg text-muted-foreground max-w-3xl mx-auto leading-relaxed">
-            An engaging children's book series that invites young readers to explore the world through 
-            imagination, curiosity, and courage. Designed for school-age readers, each story blends 
-            adventure, mystery, and humor with real cultural learning.
+            A captivating book series for school-age readers who are curious about the world. 
+            When Miranda falls asleep, her dreams magically transport her to Spanish-speaking countries, 
+            where every journey becomes an unforgettable adventure filled with new friends, cultural discoveries, 
+            and challenges that test her courage and creativity.
           </p>
         </motion.div>
 
@@ -97,7 +122,7 @@ const BooksSection = () => {
         </motion.div>
 
         {/* Books Grid */}
-        <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto">
           {books.map((book, index) => (
             <motion.div
               key={book.id}
@@ -109,20 +134,21 @@ const BooksSection = () => {
             >
               <div className="bg-card rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-500 hover:-translate-y-2 border border-border h-full flex flex-col">
                 {/* Book Info */}
-                <div className="p-8 flex-1 flex flex-col">
-                  <h3 className="font-display text-xl font-bold text-foreground mb-3">
+                <div className="p-6 flex-1 flex flex-col">
+                  <div className="text-xs font-semibold text-primary mb-2">Book #{book.id}</div>
+                  <h3 className="font-display text-lg font-bold text-foreground mb-3 leading-tight">
                     {book.title}
                   </h3>
-                  <p className="font-body text-muted-foreground mb-6 leading-relaxed flex-1">
+                  <p className="font-body text-sm text-muted-foreground mb-4 leading-relaxed flex-1">
                     {book.description}
                   </p>
                   
                   {/* Features */}
-                  <div className="flex flex-wrap gap-2 mb-6">
+                  <div className="flex flex-wrap gap-1.5 mb-4">
                     {book.features.map((feature) => (
                       <span
                         key={feature}
-                        className="bg-muted text-muted-foreground px-3 py-1 rounded-full text-xs font-medium"
+                        className="bg-muted text-muted-foreground px-2 py-0.5 rounded-full text-xs font-medium"
                       >
                         {feature}
                       </span>
@@ -130,7 +156,7 @@ const BooksSection = () => {
                   </div>
                   
                   {/* CTA */}
-                  <Button variant="amazon" size="lg" className="w-full" asChild>
+                  <Button variant="amazon" size="default" className="w-full" asChild>
                     <a
                       href={book.amazonUrl}
                       target="_blank"
@@ -152,12 +178,12 @@ const BooksSection = () => {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.6, delay: 0.4 }}
-          className="mt-16 bg-muted/50 rounded-2xl p-8 text-center"
+          className="mt-12 bg-muted/50 rounded-2xl p-8 text-center"
         >
           <p className="font-body text-lg text-muted-foreground max-w-3xl mx-auto leading-relaxed mb-6">
-            Perfect for families, classrooms, and libraries—every book concludes with interactive 
-            activities that deepen cultural understanding and encourage reflection beyond the page. 
-            Each book stands on its own, allowing readers to jump in at any point!
+            Each book explores a different destination and can be read in any order! Every adventure 
+            ends with fun, hands-on activities that help readers connect more deeply with the culture 
+            they've just explored—making learning feel like part of the journey.
           </p>
           <Button variant="hero" size="xl" asChild>
             <a
