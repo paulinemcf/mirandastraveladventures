@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 import { ExternalLink, Sparkles, BookOpen, Globe, Users } from "lucide-react";
 import { Button } from "./ui/button";
-import mirandaCharacter from "@/assets/miranda-character.png";
+import mirandaCharacter from "@/assets/miranda-character.jpg";
 import bookColombia from "@/assets/book-colombia.png";
 import bookEcuador from "@/assets/book-ecuador.png";
 import bookPuertoRico from "@/assets/book-puerto-rico.png";
@@ -105,8 +105,8 @@ const BooksSection = () => {
                 Meet Miranda
               </h3>
               <p className="font-body text-lg text-muted-foreground mb-6 leading-relaxed">
-                In the series, Miranda travels through her dreams to Spanish-speaking countries across 
-                Latin America, where she meets local children who introduce her to their history, traditions, 
+                In the series, Miranda travels through her dreams to Spanish-speaking countries, 
+                where she meets local children who introduce her to their history, traditions, 
                 daily life, and customs.
               </p>
               <p className="font-body text-lg text-muted-foreground mb-6 leading-relaxed">
