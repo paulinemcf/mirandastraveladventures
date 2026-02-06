@@ -2,7 +2,7 @@ import { motion } from "framer-motion";
 import { Menu, X } from "lucide-react";
 import { useState } from "react";
 import { Button } from "./ui/button";
-import logoFull from "@/assets/logo-full.png";
+import logoBanner from "@/assets/logo-banner.png";
 import logoMta from "@/assets/logo-mta.png";
 
 const Header = () => {
@@ -32,11 +32,11 @@ const Header = () => {
               alt="MTA Logo" 
               className="h-12 md:hidden group-hover:scale-105 transition-transform"
             />
-            {/* Desktop: Full logo */}
+            {/* Desktop: Full banner logo */}
             <img 
-              src={logoFull} 
+              src={logoBanner} 
               alt="Miranda's Travel Adventures" 
-              className="h-14 hidden md:block group-hover:scale-105 transition-transform"
+              className="h-16 hidden md:block group-hover:scale-105 transition-transform"
             />
           </a>
 

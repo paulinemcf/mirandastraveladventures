@@ -2,11 +2,11 @@ import { motion } from "framer-motion";
 import { ExternalLink, Sparkles, BookOpen, Globe, Users } from "lucide-react";
 import { Button } from "./ui/button";
 import mirandaCharacter from "@/assets/miranda-character.png";
-import bookColombia from "@/assets/book-colombia.jpg";
-import bookEcuador from "@/assets/book-ecuador.jpg";
-import bookPuertoRico from "@/assets/book-puerto-rico.jpg";
-import bookMexico from "@/assets/book-mexico.jpg";
-import bookDominicanRepublic from "@/assets/book-dominican-republic.jpg";
+import bookColombia from "@/assets/book-colombia.png";
+import bookEcuador from "@/assets/book-ecuador.png";
+import bookPuertoRico from "@/assets/book-puerto-rico.png";
+import bookMexico from "@/assets/book-mexico.png";
+import bookDominicanRepublic from "@/assets/book-dominican-republic.png";
 
 const books = [
   {
