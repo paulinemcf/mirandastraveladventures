@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 import { Sparkles, Star, Globe, BookOpen } from "lucide-react";
 import { Button } from "./ui/button";
-import mirandaCharacter from "@/assets/miranda-character.png";
+import mirandaCharacter from "@/assets/miranda-character.jpg";
 
 const HeroSection = () => {
   return (
@@ -53,7 +53,7 @@ const HeroSection = () => {
             <h1 className="font-display text-4xl md:text-5xl lg:text-6xl font-bold text-foreground mb-6 leading-tight">
               Join Miranda on{" "}
               <span className="text-gradient-sunset">Magical Adventures</span>{" "}
-              Through Latin America!
+              Through Spanish-Speaking Countries!
             </h1>
 
             <p className="font-body text-lg md:text-xl text-muted-foreground mb-8 max-w-xl mx-auto lg:mx-0 leading-relaxed">

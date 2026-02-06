@@ -65,7 +65,7 @@ const ContactSection = () => {
               sign up to get notified when new destinations are released.
             </p>
             <p className="text-sm text-muted-foreground mb-6">
-              Coming soon: Guatemala, Argentina, and more Latin American adventures!
+              Coming soon: Guatemala, Argentina, and more Spanish-speaking country adventures!
             </p>
             
             <form className="flex flex-col sm:flex-row gap-3 max-w-md mx-auto">
