@@ -23,7 +23,7 @@ const Header = () => {
       className="fixed top-0 left-0 right-0 z-50 bg-card/95 backdrop-blur-md border-b border-border shadow-sm"
     >
       <div className="container mx-auto px-4">
-        <div className="flex items-center justify-between h-16 md:h-20">
+        <div className="flex items-center justify-between h-18 md:h-24">
           {/* Logo */}
           <a href="#home" className="flex items-center group">
             {/* Mobile: MTA icon logo */}
