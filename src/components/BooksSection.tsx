@@ -148,12 +148,9 @@ const BooksSection = () => {
                   <img
                     src={book.cover}
                     alt={`Book cover - ${book.title}`}
-                    className="w-full aspect-[2/3] object-cover object-top group-hover:scale-105 transition-transform duration-500 max-h-72"
+                    className="w-full aspect-[2/3] object-contain group-hover:scale-105 transition-transform duration-500"
                     loading="lazy"
                   />
-                  <div className="absolute top-3 left-3 bg-primary text-primary-foreground text-xs font-bold px-2.5 py-1 rounded-full">
-                    Book #{book.id}
-                  </div>
                 </div>
                 {/* Book Info */}
                 <div className="p-6 flex-1 flex flex-col">
