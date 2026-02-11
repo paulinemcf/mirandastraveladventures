@@ -3,7 +3,7 @@ import { Menu, X } from "lucide-react";
 import { useState } from "react";
 import { Button } from "./ui/button";
 import bannerHero from "@/assets/banner-hero.webp";
-import cloudsBackdrop from "@/assets/clouds-backdrop.webp";
+
 
 const Header = () => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -20,8 +20,7 @@ const Header = () => {
       initial={{ y: -100 }}
       animate={{ y: 0 }}
       transition={{ duration: 0.6, ease: "easeOut" }}
-      className="fixed top-0 left-0 right-0 z-50 border-b border-border overflow-hidden"
-      style={{ backgroundImage: `url(${cloudsBackdrop})`, backgroundSize: 'cover', backgroundPosition: 'center' }}
+      className="fixed top-0 left-0 right-0 z-50 bg-background border-b border-border"
     >
       {/* Banner and Nav in a row */}
       <div className="flex items-center justify-between px-4 py-2 relative z-10">
