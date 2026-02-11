@@ -19,48 +19,47 @@ const Header = () => {
       initial={{ y: -100 }}
       animate={{ y: 0 }}
       transition={{ duration: 0.6, ease: "easeOut" }}
-      className="fixed top-0 left-0 right-0 z-50"
+      className="fixed top-0 left-0 right-0 z-50 bg-card/95 backdrop-blur-md border-b border-border"
     >
-      {/* Banner image as background */}
-      <div className="relative">
+      {/* Banner and Nav in a row */}
+      <div className="flex items-center justify-between px-4 py-2">
+        {/* Banner logo - not full width */}
         <img
           src={bannerHero}
           alt="Miranda's Travel Adventures"
-          className="w-full h-12 md:h-16 object-cover"
+          className="h-12 md:h-14 w-auto object-contain"
         />
-        {/* Navigation overlay on the banner */}
-        <nav className="absolute inset-0 flex items-end justify-end px-4 pb-3 md:pb-4">
-          {/* Desktop Navigation */}
-          <div className="hidden md:flex items-center gap-8">
-            {navItems.map((item) => (
-              <a
-                key={item.label}
-                href={item.href}
-                className="font-display font-semibold text-foreground/90 hover:text-primary transition-colors drop-shadow-sm"
-              >
-                {item.label}
-              </a>
-            ))}
-            <Button variant="amazon" size="lg" asChild>
-              <a
-                href="https://www.amazon.com/s?k=Miranda%27s+Travel+Adventures+Janeth+Bell"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                Buy on Amazon
-              </a>
-            </Button>
-          </div>
 
-          {/* Mobile Menu Button */}
-          <button
-            className="md:hidden p-2 text-foreground drop-shadow-sm"
-            onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-            aria-label="Toggle menu"
-          >
-            {mobileMenuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
-          </button>
+        {/* Desktop Navigation */}
+        <nav className="hidden md:flex items-center gap-8">
+          {navItems.map((item) => (
+            <a
+              key={item.label}
+              href={item.href}
+              className="font-display font-semibold text-foreground/90 hover:text-primary transition-colors"
+            >
+              {item.label}
+            </a>
+          ))}
+          <Button variant="amazon" size="lg" asChild>
+            <a
+              href="https://www.amazon.com/s?k=Miranda%27s+Travel+Adventures+Janeth+Bell"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Buy on Amazon
+            </a>
+          </Button>
         </nav>
+
+        {/* Mobile Menu Button */}
+        <button
+          className="md:hidden p-2 text-foreground"
+          onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
+          aria-label="Toggle menu"
+        >
+          {mobileMenuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
+        </button>
       </div>
 
       {/* Mobile Navigation */}
