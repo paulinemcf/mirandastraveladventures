@@ -1,12 +1,12 @@
 import { motion } from "framer-motion";
 import { ExternalLink, Sparkles, BookOpen, Globe, Users } from "lucide-react";
 import { Button } from "./ui/button";
-import mirandaCharacter from "@/assets/miranda-character.jpg";
-import bookColombia from "@/assets/book-colombia.png";
-import bookEcuador from "@/assets/book-ecuador.png";
-import bookPuertoRico from "@/assets/book-puerto-rico.png";
-import bookMexico from "@/assets/book-mexico.png";
-import bookDominicanRepublic from "@/assets/book-dominican-republic.png";
+import mirandaDress from "@/assets/miranda-dress.jpg";
+import bookColombia from "@/assets/book-colombia.webp";
+import bookEcuador from "@/assets/book-ecuador.webp";
+import bookPuertoRico from "@/assets/book-puerto-rico.webp";
+import bookMexico from "@/assets/book-mexico.webp";
+import bookDominicanRepublic from "@/assets/book-dominican-republic.webp";
 
 const books = [
   {
@@ -93,7 +93,7 @@ const BooksSection = () => {
           <div className="grid lg:grid-cols-2 gap-8 items-center">
             <div className="relative">
               <img
-                src={mirandaCharacter}
+                src={mirandaDress}
                 alt="Miranda - the adventurous main character"
                 className="w-full max-w-sm mx-auto rounded-2xl shadow-2xl"
               />
@@ -148,7 +148,7 @@ const BooksSection = () => {
                   <img
                     src={book.cover}
                     alt={`Book cover - ${book.title}`}
-                    className="w-full aspect-[2/3] object-cover group-hover:scale-105 transition-transform duration-500"
+                    className="w-full aspect-[2/3] object-cover object-top group-hover:scale-105 transition-transform duration-500 max-h-72"
                     loading="lazy"
                   />
                   <div className="absolute top-3 left-3 bg-primary text-primary-foreground text-xs font-bold px-2.5 py-1 rounded-full">

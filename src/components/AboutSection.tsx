@@ -19,7 +19,7 @@ const AboutSection = () => {
               <img
                 src={authorImage}
                 alt="Janeth Bell - Author of Miranda's Travel Adventures"
-                className="w-full max-w-md mx-auto rounded-2xl shadow-2xl"
+                className="w-full max-w-xs mx-auto rounded-2xl shadow-2xl"
               />
             </div>
             

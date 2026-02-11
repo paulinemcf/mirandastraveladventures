@@ -94,7 +94,7 @@ const IllustratorSection = () => {
               <img
                 src={illustratorImage}
                 alt="Olivia Wynter - Illustrator of Miranda's Travel Adventures"
-                className="w-full max-w-md mx-auto rounded-2xl shadow-2xl"
+                className="w-full max-w-xs mx-auto rounded-2xl shadow-2xl"
               />
             </div>
 
