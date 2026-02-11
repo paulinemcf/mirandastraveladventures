@@ -7,7 +7,7 @@ const HeroSection = () => {
   return (
     <section
       id="home"
-      className="relative min-h-screen flex items-center justify-center overflow-hidden pt-20"
+      className="relative min-h-screen flex items-center justify-center overflow-hidden pt-36 md:pt-40"
     >
       {/* Background with gradient */}
       <div className="absolute inset-0 bg-gradient-to-br from-ocean/20 via-primary/10 to-accent/20" />
@@ -17,14 +17,14 @@ const HeroSection = () => {
       <motion.div
         animate={{ y: [-10, 10, -10], rotate: [0, 5, 0] }}
         transition={{ duration: 6, repeat: Infinity, ease: "easeInOut" }}
-        className="absolute top-32 left-10 text-accent opacity-60"
+        className="absolute top-44 left-10 text-accent opacity-60"
       >
         <Star className="w-8 h-8 fill-current" />
       </motion.div>
       <motion.div
         animate={{ y: [10, -10, 10], rotate: [0, -5, 0] }}
         transition={{ duration: 5, repeat: Infinity, ease: "easeInOut", delay: 1 }}
-        className="absolute top-48 right-16 text-primary opacity-60"
+        className="absolute top-56 right-16 text-primary opacity-60"
       >
         <Sparkles className="w-10 h-10" />
       </motion.div>
@@ -51,15 +51,14 @@ const HeroSection = () => {
             </motion.div>
 
             <h1 className="font-display text-4xl md:text-5xl lg:text-6xl font-bold text-foreground mb-6 leading-tight">
-              Join Miranda on{" "}
-              <span className="text-gradient-sunset">Magical Adventures</span>{" "}
-              Through Spanish-Speaking Countries!
+              Travel the World with Miranda{" "}
+              <span className="text-gradient-sunset">—One Dream at a Time.</span>
             </h1>
 
             <p className="font-body text-lg md:text-xl text-muted-foreground mb-8 max-w-xl mx-auto lg:mx-0 leading-relaxed">
-              Travel through dreams to Spanish-speaking countries, solve mysteries, 
-              make new friends, and learn about diverse cultures in this engaging series 
-              for curious young readers.
+              An educational children's book series that introduces Spanish-speaking countries, 
+              Latin American culture, Caribbean traditions, and global geography through 
+              imaginative storytelling.
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start items-center">

@@ -2,8 +2,7 @@ import { motion } from "framer-motion";
 import { Menu, X } from "lucide-react";
 import { useState } from "react";
 import { Button } from "./ui/button";
-import logoBanner from "@/assets/logo-banner.png";
-import logoMta from "@/assets/logo-mta.png";
+import bannerHero from "@/assets/banner-hero.webp";
 
 const Header = () => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -20,33 +19,24 @@ const Header = () => {
       initial={{ y: -100 }}
       animate={{ y: 0 }}
       transition={{ duration: 0.6, ease: "easeOut" }}
-      className="fixed top-0 left-0 right-0 z-50 bg-card/95 backdrop-blur-md border-b border-border shadow-sm"
+      className="fixed top-0 left-0 right-0 z-50"
     >
-      <div className="container mx-auto px-4">
-        <div className="flex items-center justify-between h-18 md:h-24">
-          {/* Logo */}
-          <a href="#home" className="flex items-center group">
-            {/* Mobile: MTA icon logo */}
-            <img 
-              src={logoMta} 
-              alt="MTA Logo" 
-              className="h-12 md:hidden group-hover:scale-105 transition-transform"
-            />
-            {/* Desktop: Full banner logo */}
-            <img 
-              src={logoBanner} 
-              alt="Miranda's Travel Adventures" 
-              className="h-16 hidden md:block group-hover:scale-105 transition-transform"
-            />
-          </a>
-
+      {/* Banner image as background */}
+      <div className="relative">
+        <img
+          src={bannerHero}
+          alt="Miranda's Travel Adventures"
+          className="w-full h-28 md:h-36 object-cover"
+        />
+        {/* Navigation overlay on the banner */}
+        <nav className="absolute inset-0 flex items-end justify-end px-4 pb-3 md:pb-4">
           {/* Desktop Navigation */}
-          <nav className="hidden md:flex items-center gap-8">
+          <div className="hidden md:flex items-center gap-8">
             {navItems.map((item) => (
               <a
                 key={item.label}
                 href={item.href}
-                className="font-display font-medium text-foreground/80 hover:text-primary transition-colors"
+                className="font-display font-semibold text-foreground/90 hover:text-primary transition-colors drop-shadow-sm"
               >
                 {item.label}
               </a>
@@ -60,50 +50,50 @@ const Header = () => {
                 Buy on Amazon
               </a>
             </Button>
-          </nav>
+          </div>
 
           {/* Mobile Menu Button */}
           <button
-            className="md:hidden p-2 text-foreground"
+            className="md:hidden p-2 text-foreground drop-shadow-sm"
             onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
             aria-label="Toggle menu"
           >
             {mobileMenuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
           </button>
-        </div>
-
-        {/* Mobile Navigation */}
-        {mobileMenuOpen && (
-          <motion.nav
-            initial={{ opacity: 0, height: 0 }}
-            animate={{ opacity: 1, height: "auto" }}
-            exit={{ opacity: 0, height: 0 }}
-            className="md:hidden py-4 border-t border-border"
-          >
-            <div className="flex flex-col gap-4">
-              {navItems.map((item) => (
-                <a
-                  key={item.label}
-                  href={item.href}
-                  className="font-display font-medium text-foreground/80 hover:text-primary transition-colors py-2"
-                  onClick={() => setMobileMenuOpen(false)}
-                >
-                  {item.label}
-                </a>
-              ))}
-              <Button variant="amazon" size="lg" asChild className="w-full">
-                <a
-                  href="https://www.amazon.com/s?k=Miranda%27s+Travel+Adventures+Janeth+Bell"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  Buy on Amazon
-                </a>
-              </Button>
-            </div>
-          </motion.nav>
-        )}
+        </nav>
       </div>
+
+      {/* Mobile Navigation */}
+      {mobileMenuOpen && (
+        <motion.nav
+          initial={{ opacity: 0, height: 0 }}
+          animate={{ opacity: 1, height: "auto" }}
+          exit={{ opacity: 0, height: 0 }}
+          className="md:hidden bg-card/95 backdrop-blur-md border-b border-border py-4 px-4"
+        >
+          <div className="flex flex-col gap-4">
+            {navItems.map((item) => (
+              <a
+                key={item.label}
+                href={item.href}
+                className="font-display font-medium text-foreground/80 hover:text-primary transition-colors py-2"
+                onClick={() => setMobileMenuOpen(false)}
+              >
+                {item.label}
+              </a>
+            ))}
+            <Button variant="amazon" size="lg" asChild className="w-full">
+              <a
+                href="https://www.amazon.com/s?k=Miranda%27s+Travel+Adventures+Janeth+Bell"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Buy on Amazon
+              </a>
+            </Button>
+          </div>
+        </motion.nav>
+      )}
     </motion.header>
   );
 };
