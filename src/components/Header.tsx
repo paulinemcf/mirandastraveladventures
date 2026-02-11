@@ -26,7 +26,7 @@ const Header = () => {
         <img
           src={bannerHero}
           alt="Miranda's Travel Adventures"
-          className="w-full h-16 md:h-20 object-cover"
+          className="w-full h-12 md:h-16 object-cover"
         />
         {/* Navigation overlay on the banner */}
         <nav className="absolute inset-0 flex items-end justify-end px-4 pb-3 md:pb-4">
