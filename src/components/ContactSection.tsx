@@ -11,8 +11,8 @@ const ContactSection = () => {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.6 }}
-          className="max-w-3xl mx-auto text-center"
-        >
+          className="max-w-3xl mx-auto text-center">
+
           <span className="inline-block bg-secondary text-secondary-foreground px-4 py-2 rounded-full font-display font-semibold text-sm mb-6">
             📬 Get in Touch
           </span>
@@ -32,12 +32,12 @@ const ContactSection = () => {
               href="mailto:contact@mirandastraveladventures.com"
               whileHover={{ scale: 1.02 }}
               whileTap={{ scale: 0.98 }}
-              className="bg-card p-6 rounded-2xl shadow-lg border border-border hover:shadow-xl transition-all group"
-            >
+              className="bg-card p-6 rounded-2xl shadow-lg border border-border hover:shadow-xl transition-all group">
+
               <div className="w-14 h-14 rounded-full bg-gradient-sunset flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform">
                 <Mail className="w-6 h-6 text-primary-foreground" />
               </div>
-              <h3 className="font-display font-bold text-foreground mb-2">Email Me</h3>
+              <h3 className="font-display font-bold text-foreground mb-2">Email the Author</h3>
               <p className="text-muted-foreground text-sm">For general inquiries and collaborations</p>
             </motion.a>
 
@@ -45,8 +45,8 @@ const ContactSection = () => {
               href="mailto:contact@mirandastraveladventures.com?subject=School Visit or Event Inquiry"
               whileHover={{ scale: 1.02 }}
               whileTap={{ scale: 0.98 }}
-              className="bg-card p-6 rounded-2xl shadow-lg border border-border hover:shadow-xl transition-all group"
-            >
+              className="bg-card p-6 rounded-2xl shadow-lg border border-border hover:shadow-xl transition-all group">
+
               <div className="w-14 h-14 rounded-full bg-gradient-ocean flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform">
                 <MessageCircle className="w-6 h-6 text-secondary-foreground" />
               </div>
@@ -61,19 +61,19 @@ const ContactSection = () => {
               🌎 Be the First to Explore New Countries!
             </h3>
             <p className="text-muted-foreground mb-2">
-              Miranda's adventures are expanding! With <strong>5 books planned</strong> and more on the way, 
+              Miranda's adventures are expanding! With <strong>5 books published</strong> and more on the way, 
               sign up to get notified when new destinations are released.
             </p>
             <p className="text-sm text-muted-foreground mb-6">
-              Coming soon: Guatemala, Argentina, and more Spanish-speaking country adventures!
+
             </p>
             
             <form className="flex flex-col sm:flex-row gap-3 max-w-md mx-auto">
               <input
                 type="email"
                 placeholder="Enter your email"
-                className="flex-1 px-4 py-3 rounded-lg border border-input bg-background text-foreground placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-primary font-body"
-              />
+                className="flex-1 px-4 py-3 rounded-lg border border-input bg-background text-foreground placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-primary font-body" />
+
               <Button variant="default" size="lg" type="submit">
                 <Send className="w-4 h-4" />
                 Notify Me
@@ -82,8 +82,8 @@ const ContactSection = () => {
           </div>
         </motion.div>
       </div>
-    </section>
-  );
+    </section>);
+
 };
 
 export default ContactSection;
