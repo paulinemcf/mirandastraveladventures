@@ -22,6 +22,14 @@ const Footer = () => {
             <a href="#about" className="hover:text-primary transition-colors">About</a>
             <a href="#contact" className="hover:text-primary transition-colors">Contact</a>
             <a
+              href="https://www.facebook.com/profile.php?id=61553619797126&mibextid=LQQJ4d"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="hover:text-primary transition-colors"
+            >
+              Facebook
+            </a>
+            <a
               href="https://www.amazon.com/s?k=Miranda%27s+Travel+Adventures+Janeth+Bell"
               target="_blank"
               rel="noopener noreferrer"
