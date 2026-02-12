@@ -86,6 +86,11 @@ const AboutSection = () => {
               Happy reading — and happy travels! ✨
             </p>
 
+            <blockquote className="mt-6 border-l-4 border-primary/40 pl-4 italic text-muted-foreground font-body">
+              "If there's a book that you want to read, but it hasn't been written yet, then you must write it."
+              <span className="block mt-1 not-italic font-semibold text-foreground">— Toni Morrison</span>
+            </blockquote>
+
             {/* Features */}
             <div className="grid sm:grid-cols-2 gap-4 mt-8">
               <div className="flex items-start gap-3 p-4 bg-muted rounded-xl">
