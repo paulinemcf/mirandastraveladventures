@@ -102,17 +102,6 @@ const IllustratorSection = () => {
             <div className="absolute -top-4 -right-4 w-24 h-24 bg-accent/30 rounded-full blur-2xl" />
             <div className="absolute -bottom-4 -left-4 w-32 h-32 bg-primary/20 rounded-full blur-2xl" />
 
-            {/* Floating badge */}
-            <motion.div
-              animate={{ y: [-5, 5, -5] }}
-              transition={{ duration: 4, repeat: Infinity, ease: "easeInOut" }}
-              className="absolute -left-4 top-1/4 bg-card shadow-xl rounded-xl p-4 border border-border"
-            >
-              <div className="flex items-center gap-2">
-                <Palette className="w-5 h-5 text-primary" />
-                <span className="font-display font-semibold text-foreground">Illustrator</span>
-              </div>
-            </motion.div>
           </motion.div>
         </div>
       </div>
