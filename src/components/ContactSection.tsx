@@ -60,19 +60,25 @@ const ContactSection = () => {
             <h3 className="font-display text-xl font-bold text-foreground mb-2">
               🌎 Be the First to Explore New Countries!
             </h3>
-            <p className="text-muted-foreground mb-2">Miranda's adventures are expanding! With 5 books published and more on the way, sign up to get notified when new destinations are released.  
+            <p className="text-muted-foreground mb-2">Miranda's adventures are expanding! With 5 books published and more on the way, sign up to get notified when new destinations are released.   
 
 
-Coming this spring:  Caribbean Carnival in New York City<strong>5 books published</strong> and more on the way, 
+Coming Spring, 2026:  Caribbean Carnival in New York City.
+
+
+
+
+
+              <strong>.
+
+5 books published</strong> and more on the way, 
               sign up to get notified when new destinations are released.
             </p>
             <p className="text-sm text-muted-foreground mb-6">
             </p>
             
             <form className="flex flex-col sm:flex-row gap-3 max-w-md mx-auto">
-              <input type="email"
-              placeholder="Enter your email"
-              className="flex-1 px-4 py-3 rounded-lg border border-input bg-background text-foreground placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-primary font-body" />
+              <input type="email" placeholder="Enter your email" className="flex-1 px-4 py-3 rounded-lg border border-input bg-background text-foreground placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-primary font-body" />
 
               <Button variant="default" size="lg" type="submit">
                 <Send className="w-4 h-4" />
@@ -82,8 +88,4 @@ Coming this spring:  Caribbean Carnival in New York City<strong>5 books publish
           </div>
         </motion.div>
       </div>
-    </section>);
-
-};
-
-export default ContactSection;
+    </section>);};export default ContactSection;
