@@ -29,7 +29,7 @@ const ContactSection = () => {
           {/* Contact Options */}
           <div className="grid sm:grid-cols-2 gap-6 mb-12">
             <motion.a
-              href="mailto:contact@mirandastraveladventures.com"
+              href="mailto:mirandatraveladventures@gmail.com"
               whileHover={{ scale: 1.02 }}
               whileTap={{ scale: 0.98 }}
               className="bg-card p-6 rounded-2xl shadow-lg border border-border hover:shadow-xl transition-all group">
@@ -42,7 +42,7 @@ const ContactSection = () => {
             </motion.a>
 
             <motion.a
-              href="mailto:contact@mirandastraveladventures.com?subject=School Visit or Event Inquiry"
+              href="mailto:mirandatraveladventures@gmail.com?subject=School Visit or Event Inquiry"
               whileHover={{ scale: 1.02 }}
               whileTap={{ scale: 0.98 }}
               className="bg-card p-6 rounded-2xl shadow-lg border border-border hover:shadow-xl transition-all group">
