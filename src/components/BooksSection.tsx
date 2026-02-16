@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 import { ExternalLink, Sparkles, BookOpen, Globe, Users } from "lucide-react";
 import { Button } from "./ui/button";
-import mirandaDress from "@/assets/miranda-dress.jpg";
+import mirandaQuince from "@/assets/miranda-quince.webp";
 import bookColombia from "@/assets/book-colombia.webp";
 import bookEcuador from "@/assets/book-ecuador.webp";
 import bookPuertoRico from "@/assets/book-puerto-rico.webp";
@@ -93,7 +93,7 @@ const BooksSection = () => {
           <div className="grid lg:grid-cols-2 gap-8 items-center">
             <div className="relative">
               <img
-                src={mirandaDress}
+                src={mirandaQuince}
                 alt="Miranda - the adventurous main character"
                 className="w-full max-w-sm mx-auto rounded-2xl shadow-2xl" />
 
