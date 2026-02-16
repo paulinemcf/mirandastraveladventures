@@ -31,7 +31,7 @@ const books = [
   id: 3,
   title: "Salsa in Puerto Rico!",
   description:
-  "Miranda is on the island of Puerto Rico. In the midst of her fun, she is attacked by a bully! Miranda tries to defend herself, but she hardly speaks Spanish, and she knows no one there who can help her!",
+  "Miranda is on the island of Puerto Rico when she is confronted by a bully! Can she stand up for herself when she hardly speaks Spanish?",
   amazonUrl: "https://a.co/d/0aAh2bE0",
   features: ["Puerto Rico", "Standing Up to Bullies", "Salsa Dancing"],
   cover: bookPuertoRico
