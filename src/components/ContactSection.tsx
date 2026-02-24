@@ -93,19 +93,10 @@ const ContactSection = () => {
             <h3 className="font-display text-xl font-bold text-foreground mb-2">
               🌎 Be the First to Explore New Countries!
             </h3>
-            <p className="text-muted-foreground mb-2">Miranda's adventures are expanding! With 5 books published and more on the way, sign up to get notified when new destinations are released.   
-
-
-Coming Spring, 2026:  Caribbean Carnival in New York City.
-
-
-
-
-
-              <strong>.
-
-5 books published</strong> and more on the way, 
-              sign up to get notified when new destinations are released.
+            <p className="text-muted-foreground mb-6">
+              Miranda's adventures are expanding! With 5 books published and more on the way, sign up to get notified when new destinations are released.
+              <br /><br />
+              <strong>Coming Spring, 2026: Caribbean Carnival in New York City.</strong>
             </p>
             <p className="text-sm text-muted-foreground mb-6">
             </p>
