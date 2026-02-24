@@ -52,7 +52,7 @@ const HeroSection = () => {
 
             <h1 className="font-display text-4xl md:text-5xl lg:text-6xl font-bold text-foreground mb-6 leading-tight">
               Travel the World with Miranda{" "}
-              <span className="text-gradient-sunset">—One Dream at a Time.</span>
+              <span className="text-gradient-sunset">— One Dream at a Time.</span>
             </h1>
 
             <p className="font-body text-lg md:text-xl text-muted-foreground mb-8 max-w-xl mx-auto lg:mx-0 leading-relaxed">An educational children's book series that introduces Spanish-speaking countries, Latin American culture, Caribbean traditions, and critical learning through the STEAM approach through imaginative storytelling.
